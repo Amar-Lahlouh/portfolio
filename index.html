@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kamar Lahlouh — Full-Stack Developer</title>
+<meta name="description" content="Amar Lahlouh — Full-Stack Developer & Computer Engineering Student. Portfolio of web, mobile and backend projects." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- REPLACE WITH YOUR FAVICON IF DESIRED -->
+<link rel="icon" href="data:,">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="#home" class="navbar__brand">Kamar<span class="dot">.</span>Lahlouh</a>
+
+    <nav class="navbar__nav" id="primaryNav">
+      <ul class="navbar__links">
+        <li><a href="#home" class="nav-link" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#education" class="nav-link" data-nav>Education</a></li>
+        <li><a href="#certificates" class="nav-link" data-nav>Certificates</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+<!-- 
+    <a href="Amar-Lahlouh-CV.pdf" class="btn btn--ghost navbar__cta" download>Resume</a> -->
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-menu__links">
+    <li><a href="#home" class="nav-link" data-nav>Home</a></li>
+    <li><a href="#about" class="nav-link" data-nav>About</a></li>
+    <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+    <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+    <li><a href="#education" class="nav-link" data-nav>Education</a></li>
+    <li><a href="#certificates" class="nav-link" data-nav>Certificates</a></li>
+    <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+  </ul>
+  <!-- <a href="Amar-Lahlouh-CV.pdf" class="btn btn--primary" download>Download CV</a> -->
+</div>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__grid"></div>
+    <div class="hero__glow"></div>
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__text reveal">
+      <p class="eyebrow">// full-stack developer</p>
+      <h1 class="hero__title">
+        Hi, I'm <span class="text-accent">Kamar Lahlouh</span>
+      </h1>
+      <p class="hero__subtitle">Full-Stack Developer &amp; Computer Engineering Student</p>
+      <p class="hero__desc">
+        Full-Stack Developer passionate about building modern web and mobile applications,
+        scalable APIs, and complete digital experiences.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View My Projects</a>
+        <a href="#contact" class="btn btn--outline">Contact Me</a>
+      
+      </div>
+
+      <div class="hero__meta">
+        <span><span class="status-dot"></span> Available for opportunities</span>
+      </div>
+    </div>
+
+    <div class="hero__visual reveal" style="--delay:120ms">
+      <div class="terminal" role="img" aria-label="Code editor window showing a developer profile object">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--yellow"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">developer.js</span>
+        </div>
+        <div class="terminal__body">
+          <pre><code id="typedCode"></code><span class="terminal__cursor" id="terminalCursor">&nbsp;</span></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="container">
+    <p class="eyebrow reveal">// about</p>
+    <h2 class="section__title reveal">About Me</h2>
+
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p>
+          I'm a Computer Engineering student at the <strong>Lebanese International University (LIU)</strong>,
+          currently focused on full-stack development. I enjoy working across the whole stack — from
+          building responsive interfaces to designing backend services and APIs that power them.
+        </p>
+        <p>
+          My work spans <strong>web development</strong>, <strong>mobile development</strong>, and
+          <strong>backend engineering</strong>, including REST APIs, databases, authentication systems,
+          and payment integrations. I like taking a project from an idea to a complete, working
+          application — handling everything from the UI to the database and deployment.
+        </p>
+        <p>
+          I'm continuously building projects to sharpen these skills and to get comfortable with the
+          full lifecycle of shipping real, usable software.
+        </p>
+      </div>
+
+      <div class="about__highlights reveal" style="--delay:120ms">
+        <div class="highlight-card">
+          <span class="highlight-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/></svg>
+          </span>
+          <h3>Education</h3>
+          <p>Computer Engineering, LIU</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v0M16 4v0"/></svg>
+          </span>
+          <h3>Focus</h3>
+          <p>Web &amp; Mobile Full-Stack Development</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 17V7a2 2 0 0 1 2-2h9l5 5v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M15 5v5h5"/></svg>
+          </span>
+          <h3>Interests</h3>
+          <p>APIs, Databases &amp; Authentication</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </span>
+          <h3>Payments</h3>
+          <p>Stripe Integration Experience</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section section--alt" id="skills">
+  <div class="container">
+    <p class="eyebrow reveal">// skills</p>
+    <h2 class="section__title reveal">Technical Skills</h2>
+    <p class="section__subtitle reveal">Technologies and tools I build with.</p>
+
+    <div class="skills__grid">
+
+      <div class="skill-card reveal">
+        <h3 class="skill-card__title">Frontend Development</h3>
+        <div class="chips">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">React.js</span>
+          <span class="chip">Vite</span>
+          <span class="chip">Tailwind CSS</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">DaisyUI</span>
+          <span class="chip">React Router</span>
+          <span class="chip">Context API</span>
+          <span class="chip">Redux</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="--delay:60ms">
+        <h3 class="skill-card__title">Mobile Development</h3>
+        <div class="chips">
+          <span class="chip">React Native</span>
+          <span class="chip">Expo</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="--delay:120ms">
+        <h3 class="skill-card__title">Backend Development</h3>
+        <div class="chips">
+          <span class="chip">Node.js</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">CORS</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="--delay:180ms">
+        <h3 class="skill-card__title">Databases</h3>
+        <div class="chips">
+          <span class="chip">MongoDB</span>
+          <span class="chip">MySQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3 class="skill-card__title">Authentication &amp; Authorization</h3>
+        <div class="chips">
+          <span class="chip">Clerk</span>
+          <span class="chip">Google Sign-In</span>
+          <span class="chip">Apple Sign-In</span>
+          <span class="chip">Authentication</span>
+          <span class="chip">Role-Based Access Control</span>
+          <span class="chip">Protected Routes</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="--delay:60ms">
+        <h3 class="skill-card__title">Payments</h3>
+        <div class="chips">
+          <span class="chip">Stripe</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="--delay:120ms">
+        <h3 class="skill-card__title">APIs / Data</h3>
+        <div class="chips">
+          <span class="chip">REST APIs</span>
+          <span class="chip">TanStack Query</span>
+          <span class="chip">Data Fetching</span>
+          <span class="chip">Caching</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="--delay:180ms">
+        <h3 class="skill-card__title">Tools &amp; Services</h3>
+        <div class="chips">
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">ImageKit</span>
+          <span class="chip">Inngest</span>
+          <span class="chip">Sentry</span>
+          <span class="chip">Sevalla</span>
+       
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3 class="skill-card__title">Python / Machine Learning</h3>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">scikit-learn</span>
+          <span class="chip">pandas</span>
+          <span class="chip">matplotlib</span>
+          <span class="chip">seaborn</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PROJECT ================= -->
+<section class="section" id="featured">
+  <div class="container">
+    <p class="eyebrow reveal">// featured project</p>
+    <h2 class="section__title reveal">Featured Work</h2>
+
+    <div class="featured-card reveal">
+      <div class="featured-card__media">
+        <!-- REPLACE: put assets/ecommerce.jpg here and swap the placeholder below for an <img> tag -->
+        <div class="img-placeholder">
+
+          <span class="test">
+            <!-- <img src="./assets/ecommerce.png" alt=""> -->
+            <img src="./assets/mobileco.png" alt="" width="200">
+           </span>
+          
+          
+           
+        </div>
+        <span class="badge badge--featured">Featured Project</span>
+      </div>
+
+      <div class="featured-card__content">
+        <h3 class="featured-card__title">E-Commerce Mobile App</h3>
+        <p class="featured-card__stack-line">React + React Native + Expo · Node.js + Express · MongoDB</p>
+        <p class="featured-card__desc">
+         Fully functional e-commerce mobile application with secure authentication, shopping, Stripe payments, order management, and a complete React.js admin dashboard for managing products, orders, customers, and live analytics.
+        </p>
+
+        <div class="chips chips--tech">
+          <span class="chip chip--tech">React </span>
+          <span class="chip chip--tech">React Native</span>
+          <span class="chip chip--tech">Expo</span>
+          <span class="chip chip--tech">JavaScript</span>
+          <span class="chip chip--tech">Node.js</span>
+          <span class="chip chip--tech">Express.js</span>
+          <span class="chip chip--tech">MongoDB</span>
+          <span class="chip chip--tech">Clerk</span>
+          <span class="chip chip--tech">Stripe</span>
+          <span class="chip chip--tech">TanStack Query</span>
+          <span class="chip chip--tech">Inngest</span>
+          <span class="chip chip--tech">Sentry</span>
+          <span class="chip chip--tech">Sevalla</span>
+        </div>
+
+        <div class="featured-card__actions">
+          <button class="btn btn--primary" id="openProjectModal">View Details</button>
+          <!-- REPLACE WITH YOUR GITHUB URL -->
+          <a href="https://github.com/Amar-Lahlouh/expo-ecommerce" target="_blank" rel="noopener" class="btn btn--outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project details modal -->
+<div class="modal-overlay" id="projectModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal__close" id="closeProjectModal" aria-label="Close details">&times;</button>
+    <span class="badge badge--featured">Featured Project</span>
+    <h3 id="modalTitle" class="modal__title">E-Commerce Mobile App</h3>
+    <p class="modal__stack-line">React Native + Expo · Node.js + Express · MongoDB</p>
+
+    <div class="modal__body">
+      <div class="modal__col">
+        <h4>Shopping Experience</h4>
+        <ul>
+          <li>Secure Authentication with Clerk</li>
+          <li>Google Sign-In</li>
+          <li>Apple Sign-In</li>
+          <li>Product Browsing</li>
+          <li>Product Image Slider</li>
+          <li>Cart</li>
+          <li>Favorites / Wishlist</li>
+          <li>Checkout</li>
+          <li>Orders Flow</li>
+          <li>Stripe-Powered Payments</li>
+          <li>Address Management System</li>
+        </ul>
+      </div>
+      <div class="modal__col">
+        <h4>Admin Dashboard</h4>
+        <ul>
+          <li>Product Management &amp; Product CRUD</li>
+          <li>Product Image Handling</li>
+          <li>Pricing Management</li>
+          <li>Products Management</li>
+          <li>Orders Management</li>
+          <li>Customer Management</li>
+          <li>Live Analytics</li>
+          <li>Dashboard Statistics</li>
+          <li>Admin-Only Protected Routes</li>
+        </ul>
+        <h4>Engineering</h4>
+        <ul>
+          <li>Complete REST API — Node.js + Express Backend</li>
+          <li>Authentication &amp; Roles</li>
+          <li>Background Jobs with Inngest</li>
+          <li>Sentry Monitoring &amp; Error Tracking</li>
+          <li>TanStack Query for Data Fetching &amp; Caching</li>
+          <li>Deployment on Sevalla</li>
+          <li>Git &amp; GitHub Workflow — Branches, Commits, Pull Requests, Code Reviews</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="chips chips--tech">
+      <span class="chip chip--tech">React Native</span>
+      <span class="chip chip--tech">Expo</span>
+      <span class="chip chip--tech">JavaScript</span>
+      <span class="chip chip--tech">Node.js</span>
+      <span class="chip chip--tech">Express.js</span>
+      <span class="chip chip--tech">MongoDB</span>
+      <span class="chip chip--tech">Clerk</span>
+      <span class="chip chip--tech">Stripe</span>
+      <span class="chip chip--tech">TanStack Query</span>
+      <span class="chip chip--tech">Inngest</span>
+      <span class="chip chip--tech">Sentry</span>
+      <span class="chip chip--tech">REST API</span>
+      <span class="chip chip--tech">Git</span>
+      <span class="chip chip--tech">GitHub</span>
+      <span class="chip chip--tech">Sevalla</span>
+    </div>
+
+    <div class="modal__actions">
+      <!-- REPLACE WITH YOUR GITHUB URL -->
+      <a href="https://github.com/Amar-Lahlouh/expo-ecommerce" target="_blank" rel="noopener" class="btn btn--outline">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section section--alt" id="projects">
+  <div class="container">
+    <p class="eyebrow reveal">// projects</p>
+    <h2 class="section__title reveal">Other Projects</h2>
+    <p class="section__subtitle reveal">A selection of other things I've built.</p>
+
+    <div class="projects__grid">
+
+        <!-- AI Image Generator -->
+      <article class="project-card reveal" style="--delay:120ms">
+        <div class="project-card__media">
+          <!-- REPLACE: assets/ai-image-generator.jpg -->
+          <div class="img-placeholder img-placeholder--sm">
+          
+            <span><img src="./assets/imagegenerator.png" alt=""></span>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">AI Image Generator</h3>
+          <p class="project-card__desc">Full-stack AI image generation application integrating AI services into a modern web experience.</p>
+          <div class="chips chips--tech">
+            <span class="chip chip--tech">React</span>
+            <span class="chip chip--tech">Node.js</span>
+            <span class="chip chip--tech">AI API Integration</span>
+          </div>
+          <div class="project-card__actions">
+            <!-- REPLACE WITH YOUR GITHUB URL -->
+            <a href="https://github.com/Amar-Lahlouh/AI-Image-Generator" target="_blank" rel="noopener" class="btn btn--sm btn--outline">GitHub</a>
+        
+          </div>
+        </div>
+      </article>
+
+      <!-- Food Delivery App -->
+      <article class="project-card reveal">
+        <div class="project-card__media">
+          <!-- REPLACE: assets/food-delivery.jpg -->
+          <div class="img-placeholder img-placeholder--sm">
+          
+            <span><img src="./assets/fooddelv.png" alt=""></span>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Food Delivery App</h3>
+          <p class="project-card__desc">Full-stack food delivery application with modern UI, image management, and Stripe-powered payments.</p>
+          <div class="chips chips--tech">
+            <span class="chip chip--tech">MERN</span>
+            <span class="chip chip--tech">TypeScript</span>
+            <span class="chip chip--tech">Tailwind CSS</span>
+            <span class="chip chip--tech">ImageKit</span>
+            <span class="chip chip--tech">Stripe</span>
+          </div>
+          <div class="project-card__actions">
+            <!-- REPLACE WITH YOUR GITHUB URL -->
+            <a href="https://github.com/Amar-Lahlouh/Food-Delivery" target="_blank" rel="noopener" class="btn btn--sm btn--outline">GitHub</a>
+
+          </div>
+        </div>
+      </article>
+
+      <!-- Doctor Appointment System -->
+      <!-- <article class="project-card reveal" style="--delay:60ms">
+        <div class="project-card__media">
+           REPLACE: assets/doctor-appointment.jpg -->
+          <!-- <div class="img-placeholder img-placeholder--sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 6h6M9 18h.01"/></svg>
+            <span>Add screenshot: assets/doctor-appointment.jpg</span>
+          </div>
+        </div> -->
+        <!-- <div class="project-card__body">
+          <h3 class="project-card__title">Doctor Appointment System</h3>
+          <p class="project-card__desc">Appointment booking platform with user and doctor roles, authentication, and Stripe payments.</p>
+          <div class="chips chips--tech">
+            <span class="chip chip--tech">React</span>
+            <span class="chip chip--tech">Node.js</span>
+            <span class="chip chip--tech">Express.js</span>
+            <span class="chip chip--tech">MongoDB</span>
+            <span class="chip chip--tech">Stripe</span>
+          </div>
+          <div class="project-card__actions">
+            
+            <a href="YOUR_GITHUB_REPO_URL" target="_blank" rel="noopener" class="btn btn--sm btn--outline">GitHub</a>
+            REPLACE WITH YOUR LIVE DEMO URL -->
+            <!-- <a href="YOUR_LIVE_DEMO_URL" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Live Demo</a>
+          </div>
+        </div>
+      </article>  -->
+
+    
+
+      <!-- Travel Senior -->
+      <article class="project-card reveal">
+        <div class="project-card__media">
+          <!-- REPLACE: assets/travel-senior.jpg -->
+          <div class="img-placeholder img-placeholder--sm">
+          <span><img src="./assets/paradise.png" alt=""></span>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">Lebanon Paradise Tours</h3>
+          <p class="project-card__desc">Tour-related web application.</p>
+            <div class="chips chips--tech">
+            <span class="chip chip--tech">React</span>
+            <span class="chip chip--tech">Node.js</span>
+            <span class="chip chip--tech">MYSQL</span>
+            <span class="chip chip--tech">Tailwind CSS</span>
+          </div>
+          <!-- Technologies not specified — add tech chips here once confirmed -->
+          <div class="project-card__actions">
+            <!-- REPLACE WITH YOUR GITHUB URL -->
+            <a href="https://github.com/Amar-Lahlouh/Lebanon-Paradise-Tours" target="_blank" rel="noopener" class="btn btn--sm btn--outline">GitHub</a>
+           
+          </div>
+        </div>
+      </article>
+
+      <!-- Car Rental System -->
+    
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="section" id="education">
+  <div class="container">
+    <p class="eyebrow reveal">// education</p>
+    <h2 class="section__title reveal">Education</h2>
+
+    <div class="education-card reveal">
+      <div class="education-card__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/></svg>
+      </div>
+      <div>
+        <h3 class="education-card__school">Lebanese International University (LIU)</h3>
+        <p class="education-card__degree">Computer Engineering</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+<section class="section section--alt" id="certificates">
+  <div class="container">
+    <p class="eyebrow reveal">// certificates</p>
+    <h2 class="section__title reveal">Certificates</h2>
+
+
+    <div class="certs__grid">
+
+      <!-- CERTIFICATE PLACEHOLDER 1 — replace all fields below -->
+     <div class="cert-card reveal">
+  <div class="cert-card__icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <circle cx="12" cy="8" r="6"/>
+      <path d="M8.5 13.5 6 22l6-3 6 3-2.5-8.5"/>
+    </svg>
+  </div>
+
+  <h3 class="cert-card__title">Digital Heroes Programme | Intermediate</h3>
+
+  <p class="cert-card__org">
+    Issued by: Digital Heroes Programme
+  </p>
+
+  <p class="cert-card__date">
+    Date: August 1, 2026
+  </p>
+
+  <p class="cert-card__desc">
+    Completed 19 courses covering AI Fundamentals, Power BI,
+    Visualization Fundamentals, and Excel.
+  </p>
+</div>
+
+
+    <div class="cert-card reveal">
+  <div class="cert-card__icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <circle cx="12" cy="8" r="6"/>
+      <path d="M8.5 13.5 6 22l6-3 6 3-2.5-8.5"/>
+    </svg>
+  </div>
+
+  <h3 class="cert-card__title">Introduction to Front-End Development</h3>
+
+  <p class="cert-card__org">
+    Issued by: Coursera
+  </p>
+
+  <p class="cert-card__date">
+    Date: 2023
+  </p>
+
+  <p class="cert-card__desc">
+    Covered the fundamentals of front-end development, including
+    distinguishing between front-end and back-end development,
+    designing webpages and user interfaces, and exploring UI frameworks.
+  </p>
+
+  <!-- REPLACE WITH YOUR ACTUAL CERTIFICATE LINK -->
+
+
+</div>
+
+
+ <div class="cert-card reveal">
+  <div class="cert-card__icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <circle cx="12" cy="8" r="6"/>
+      <path d="M8.5 13.5 6 22l6-3 6 3-2.5-8.5"/>
+    </svg>
+  </div>
+
+  <h3 class="cert-card__title">Machine Learning for All</h3>
+
+  <p class="cert-card__org">
+    Issued by: Coursera
+  </p>
+
+  <p class="cert-card__date">
+    Date: 2021
+  </p>
+
+  <p class="cert-card__desc">
+    Covered the fundamentals of modern machine learning technologies,
+    including how machine learning works and how data influences
+    machine learning results and predictions.
+  </p>
+
+  <!-- REPLACE WITH YOUR ACTUAL CERTIFICATE LINK -->
+
+
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="container">
+    <p class="eyebrow reveal">// contact</p>
+    <h2 class="section__title reveal">Get In Touch</h2>
+    <p class="section__subtitle reveal">Have a project in mind or just want to say hi? My inbox is open.</p>
+
+    <div class="contact__grid">
+      <div class="contact__info reveal">
+        <a href="mailto:YOUR_EMAIL@example.com" class="contact__item">
+          <span class="contact__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </span>
+          <span>
+            <strong>Email</strong>
+            <!-- REPLACE WITH YOUR EMAIL -->
+            <span>amarlahlouh5@gmail.com</span>
+          </span>
+        </a>
+        <!-- REPLACE WITH YOUR LINKEDIN URL -->
+        <a href="https://www.linkedin.com/in/kamar-lahlouh" target="_blank" rel="noopener" class="contact__item">
+          <span class="contact__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9v12M10 13c0-2.2 1.8-4 4-4s4 1.8 4 4v8"/></svg>
+          </span>
+          <span>
+            <strong>LinkedIn</strong>
+            <span>https://www.linkedin.com/in/kamar-lahlouh</span>
+          </span>
+        </a>
+        <!-- REPLACE WITH YOUR GITHUB URL -->
+        <a href="https://github.com/Amar-Lahlouh" target="_blank" rel="noopener" class="contact__item">
+          <span class="contact__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          </span>
+          <span>
+            <strong>GitHub</strong>
+            <span>https://github.com/Amar-Lahlouh</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <p class="footer__name">Kamar Lahlouh</p>
+      <p class="footer__role">Full-Stack Developer | Computer Engineering Student</p>
+    </div>
+
+    <div class="footer__social">
+      <!-- REPLACE WITH YOUR GITHUB URL -->
+      <a href="https://github.com/Amar-Lahlouh" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+      </a>
+      <!-- REPLACE WITH YOUR LINKEDIN URL -->
+      <a href="https://www.linkedin.com/in/kamar-lahlouh" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9v12M10 13c0-2.2 1.8-4 4-4s4 1.8 4 4v8"/></svg>
+      </a>
+      <!-- REPLACE WITH YOUR EMAIL -->
+      <a href="mailto:amarlahlouh5@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      </a>
+    </div>
+
+    <p class="footer__copy">&copy; <span id="year"></span> Kamar Lahlouh. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
